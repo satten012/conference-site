@@ -1,0 +1,355 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Crimson Text', serif;
+    font-family: 'Jost', sans-serif;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+ul li{
+    list-style: none;
+}
+
+header{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    height: 100px;
+    padding: 20px 0;
+    display: flex;
+    box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.25);
+}
+
+.header-logo img {
+    width: auto;
+    max-width: 95%;
+    margin-top: 5px;
+/* height: 100%; */
+}
+
+.header-menu{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.header-menu > ul > li {
+    padding-right: 15px;
+    font-size: 18px;
+    color: #0044b3;
+    font-weight: 700;
+}
+
+.main-expectation h4, h4 {
+    font-weight: 700;
+    color: #0044b3;
+}
+
+.main-content h4 {
+    color: white;
+}
+
+main{
+    margin-top: 100px;
+    overflow: hidden;
+    
+}
+
+.main-content{
+    background-image: url(../image/main.jpg) ;
+    min-height: 90vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.main-content::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.main-content > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-content > .container > div:nth-child(1) {
+    position: relative;
+    margin-top: 20vh;
+    color: white;
+}
+.main-content h4 {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 4.5px;
+    font-size: 36px;
+}
+
+.main-content > .container > div:nth-child(1) p {
+    color: white;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.main-content > .container > div:nth-child(1) button {
+    padding: 15px 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: white;
+    background-color: #0044b3;
+
+    transition: all .5s;
+    font-size: 16px;
+}
+
+.main-content > .container > div:nth-child(1) button:hover {
+
+    color: #0044b3;
+    background-color: white;
+    transition: all .5s;
+
+}
+
+
+.main-expectation{
+    padding: 120px 0;
+    position: relative;
+    padding-top: 20px;
+}
+
+.main-expectation p{
+    color: black;
+}
+
+.main-expectationImg {
+    position: relative;
+}
+
+.main-expectationImg  img{
+    border-radius: 10px;
+    max-width: 50%;
+}
+
+.main-expectationImg > div:nth-child(2) img{
+    position: absolute;
+    right: 0;
+    top: 40px;
+    left: 40%;
+}
+
+.main-why,.main-location, .students, .main-why{
+    padding: 80px 0px;
+}
+
+/* .stats{
+    padding: 120px 0;
+} */
+
+.main-expectationStats{
+    background-image: url(../image/Confence-Center-2.jpg) ;
+  height: 300px; 
+    background-position: center;
+    background-size: cover;
+    padding: 40px 0;
+    position: relative;
+
+}
+
+.main-expectationStats::before{
+    content: 0;
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background: rgba(0,0,0,0.5);
+}
+
+
+.main-expectationStats> .stats {
+    height: 100%;
+}
+
+.main-expectationStats> .stats > div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-expectationStatsRound{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid white;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.main-expectationStats h4 {
+    color: white;
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+.main-expectationStatsRound i {
+    font-size: 56px;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.main-expectationStats p {
+    color: white;;
+    font-size: 18px;
+}
+
+.students h4 {
+    text-align: center;
+    font-size: 26px;
+}
+
+.students > div > div {
+    padding-top: 50px ;
+}
+
+
+
+.students img {
+    border-radius: 15px;
+    margin-left: 80px;
+}
+
+
+.main-location h4,.main-location p  {
+    text-align: center;
+    color: black;
+    font-weight: 700;
+}
+
+.main-location h4{
+    color: #0044b3;
+}
+
+.main-locationSubtitle{
+    margin-top: 15px;
+
+}
+
+
+.main-locationContent{
+margin-top: 50px;
+display: flex;
+flex-wrap: wrap;
+/* gap: 10px; */
+
+
+}
+/* .main-locationContent > div {
+box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.25);
+width: 90%;
+
+} */
+
+.main-locationContent-date{
+    display: flex;
+    box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.25);
+    margin-right: 10px;
+    padding: 25px 0;
+    transition: all .5s;
+    cursor: pointer;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.main-locationContent-date:hover{
+    transform: scale(1.1);
+    transition: all .5s;
+    position: relative;
+    z-index: 200;
+    color: white;
+}
+
+.main-locationContent-date h4 {
+    font-size: 32px;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+.main-locationContent-dateSub {
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.main-locationContent-datePlace h4, .main-locationContent-datePlace p {
+    text-align: start;
+}
+
+.main-locationContent-datePlace p {
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.main-locationContent-datePlace i {
+    color: #0044b3;
+    margin-right: 15px;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.main-why {
+    text-align: center;
+}
+
+.main-whyContent {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
+
+.main-whyContent > div {
+/*     box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.25); */
+}
+
+.main-whyContent > div h4 {
+    color: black;
+  margin-top: 18px;
+}
+
+.main-whyContent > div p {
+    color: black;
+    padding: 12px 20px;
+}
+
+.main-whyContentFigure i {
+    color: #0044b3;
+    font-size: 48px;
+    margin-top: 12px;
+}
+
+.main-why{
+    padding-bottom: 0;
+}
