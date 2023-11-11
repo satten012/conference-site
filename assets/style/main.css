@@ -91,7 +91,7 @@ main{
     margin-top: 20vh;
     color: white;
 }
-.main-content h4 {
+.main-contentTitle {
     color: white;
     text-transform: uppercase;
     letter-spacing: 4.5px;
@@ -236,13 +236,14 @@ main{
     padding-top: 50px ;
 }
 
-
-
 .students img {
     border-radius: 15px;
     margin-left: 80px;
 }
 
+.header-menu li {
+    cursor: pointer;
+}
 
 .main-location h4,.main-location p  {
     text-align: center;
@@ -632,7 +633,7 @@ textarea:focus-visible, textarea:focus, textarea:target{
         font-style: italic;
         font-size: 16px;
     }
-    .main-content h4 {
+    .main-contentTitle {
         color: white;
         text-transform: uppercase;
         letter-spacing: 4.5px;
@@ -744,7 +745,6 @@ textarea:focus-visible, textarea:focus, textarea:target{
     .main-locationContent-date h4 {
         font-size: 24px;
         font-weight: 900;
-/*         text-align: center; */
     }
 
     .main-locationContent-date > div:nth-child(1){
@@ -776,4 +776,45 @@ textarea:focus-visible, textarea:focus, textarea:target{
         margin-bottom: 25px;
         font-size: 14px;
     }
+ }
+
+
+ @media (max-width: 768px){
+    .main-contentTitle{
+        padding-top: 172px;
+        font-size: 26px;
+    }
+
+    .header-logo img {
+        max-width: 80%;
+    }
+    .main-content > .container > div:nth-child(1) button, .footer-btn {
+        padding: 12px 30px;
+    }
+    .main-expectationImg > div {
+        height: 50%;
+    }
+    .main-expectationImg > div:nth-child(2) > img{
+        position: static;
+        width: 112%;
+        height: 80%;
+    }
+    .main-expectationImg > div img {
+        width: 112%;
+        height: 80%;
+
+    }
+    .main-expectationContent {
+        padding-left: 40px;
+    }
+    .main-locationContent-date {
+        min-height: 178px;
+    }
+    .reviews > div:nth-child(2) h4 {
+        font-size: 30px;
+    }
+    .swiper{
+        padding-left: 30px;
+    }
+
  }
